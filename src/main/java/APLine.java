@@ -1,7 +1,7 @@
 public class APLine
 {
   private int aNum,bNum,cNum;
-  private int slope;
+  private double slope;
   public APLine(int a, int b, int c){
     aNum =a;
     bNum = b;
@@ -12,7 +12,7 @@ public class APLine
     return slope;
   }
   public boolean isOnline(int x, int y){
-    if(((a*x)+(b*y)+c)==0){return true;}
+    if(((aNum*x)+(bNum*y)+cNum)==0){return true;}
     return false;
   }
 }
