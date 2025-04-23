@@ -6,12 +6,12 @@ public class APLine
     aNum =a;
     bNum = b;
     cNum = c;
-    slope = -(double)a/b;
+    slope = -(double)aNum/bNum;
   }
   public double getSlope(){
     return slope;
   }
-  public boolean isOnline(int x, int y){
+  public boolean isOnline(double x, double y){
     if(((aNum*x)+(bNum*y)+cNum)==0){return true;}
     return false;
   }
