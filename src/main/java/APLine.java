@@ -1,15 +1,15 @@
 public class APLine
 {
-  private int aNum,bNum,cNum;
-  public APLine(int a, int b, int c){
-    aNum =a;
-    bNum = b;
-    cNum = c;
+  private int a,b,c;
+  public APLine(int a1, int b1, int c1){
+    a = a1;
+    b = b1;
+    c = c1;
   }
   public double getSlope(){
-    return -(double)aNum/bNum;
+    return -(double)a / b;
   }
-  public boolean isOnline(int x, int y){
-    return aNum*x + bNum*y + cNum ==0;
+  public boolean isOnLine(int x, int y){
+    return a*x + b*y + c ==0;
   }
 }
